@@ -1,0 +1,54 @@
+.succes__container {
+  height: 86vh;
+  max-width: 1000px;
+  margin: 5rem auto;
+  text-align: center;
+
+  .succes-img {
+    margin-bottom: 20px;
+    i {
+      font-size: 7rem;
+      color: green;
+    }
+  }
+
+  .title {
+    font-size: 3rem;
+    margin-bottom: 10px;
+  }
+
+  .subtitle {
+    font-size: 2.5rem;
+    font-weight: 400;
+    margin-bottom: 10px;
+  }
+
+  .text {
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+  }
+
+  .sub-text {
+    font-size: 2.1rem;
+    margin-bottom: 20px;
+  }
+
+  .button {
+    a {
+      margin-top: 10px;
+      color: white;
+      background-color: var(--main-pink);
+      border-radius: 8px;
+      border: 1px solid var(--main-pink);
+      font-size: 2.2rem;
+      padding: 10px 50px;
+      transition: all 0.2s;
+
+      &:hover {
+        border-color: var(--main-pink);
+        background-color: transparent;
+        color: black;
+      }
+    }
+  }
+}

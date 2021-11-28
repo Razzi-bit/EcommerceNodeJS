@@ -1,0 +1,170 @@
+.winkelmand {
+  margin: 5rem 0;
+  height: 86vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  h1 {
+    font-size: 3rem;
+    font-weight: 400;
+  }
+  &_box {
+    margin-top: 5rem;
+    background-color: #fff;
+    max-height: 55rem;
+    width: 80rem;
+    border: var(--line);
+    box-shadow: 0px 0px 1.2px rgba(0, 0, 0, 0.041), 0px 0px 2.7px rgba(0, 0, 0, 0.06),
+      0px 0px 4.8px rgba(0, 0, 0, 0.074), 0px 0px 8px rgba(0, 0, 0, 0.086),
+      0px 0px 13.2px rgba(0, 0, 0, 0.1), 0px 0px 23.1px rgba(0, 0, 0, 0.119),
+      0px 0px 50px rgba(0, 0, 0, 0.16);
+
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    ul {
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      li {
+        background-color: rgba($color: #fbc9d4, $alpha: 0.16);
+        border-radius: 8px;
+        display: flex;
+        justify-content: center;
+        margin: 5rem 10rem 0;
+        padding: 1rem 2rem;
+        .product_beschrijving {
+          display: flex;
+          justify-content: left;
+          margin-right: auto;
+          img {
+            height: 8rem;
+            width: auto;
+            border-radius: 0.8rem;
+          }
+          &-text {
+            margin-left: 2rem;
+            font-size: 2rem;
+            font-weight: 400;
+            display: flex;
+            flex-direction: column;
+            align-items: left;
+            justify-content: center;
+          }
+        }
+        .product_aantal-box {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          & > * {
+            font-size: 2.5rem;
+            margin-right: 1.5rem;
+          }
+          button {
+            cursor: pointer;
+            border: none;
+            background-color: #fff;
+          }
+        }
+        .btn_verwijderen {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin-left: 2rem;
+          button {
+            cursor: pointer;
+            font-size: 1.5rem;
+            border: none;
+            background-color: var(--main-pink);
+            width: 4.5rem;
+            height: 4rem;
+            border-radius: 8px;
+            color: #fff;
+          }
+        }
+      }
+    }
+    .afreken_box {
+      width: 100%;
+
+      display: flex;
+      justify-content: space-between;
+      margin: 3rem 0;
+      padding: 0 10rem;
+      .totaal {
+        display: flex;
+        flex-direction: column;
+        h1 {
+          font-size: 2.5rem;
+          font-weight: 300;
+        }
+        p {
+          font-size: 2rem;
+          font-weight: 600;
+        }
+      }
+      .btn_afrekenen {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        button {
+          cursor: pointer;
+          border: none;
+          border-radius: 10px;
+          background-color: var(--main-pink);
+          padding: 1rem 2rem;
+          height: 5rem;
+          color: #fff;
+          font-size: 1.5rem;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+  @media only screen and (max-width: 1000px) {
+    &_box {
+      width: 70%;
+    }
+  }
+  @media only screen and (max-width: 800px) {
+    &_box {
+      width: 90%;
+    }
+  }
+  @media only screen and (max-width: 500px) {
+    &_box {
+      width: 90%;
+      ul {
+        width: 100%;
+        height: 40rem;
+        overflow: auto;
+        li {
+          display: flex;
+          justify-content: center;
+          margin: 5rem 10rem 0;
+          .product_aantal-box {
+            display: none;
+          }
+        }
+      }
+      .afreken_box {
+        padding: 0 10rem;
+      }
+    }
+  }
+  @media only screen and (max-width: 380px) {
+    &_box {
+      width: 90%;
+      .afreken_box {
+        padding: 0;
+        justify-content: center;
+        .totaal {
+          margin-right: 4rem;
+        }
+      }
+    }
+  }
+}

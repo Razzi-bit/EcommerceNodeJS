@@ -1,0 +1,160 @@
+header {
+  height: 8vh;
+  background-color: var(--main-pink);
+  font-size: 2rem;
+  color: white;
+  padding: 10px 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .navbar__laptop {
+    flex: 1;
+    justify-content: left;
+    display: flex;
+    font-size: 2.4rem;
+
+    .hamburger {
+      display: none;
+      color: white;
+
+      @media (max-width: 800px) {
+        display: block;
+        font-size: 4rem;
+        cursor: pointer;
+      }
+    }
+
+    .nav__menu-mobiel {
+      display: none;
+
+      @media (max-width: 800px) {
+        display: none;
+        cursor: pointer;
+      }
+    }
+
+    .home {
+      @media (max-width: 800px) {
+        display: none;
+      }
+    }
+    a {
+      color: white;
+      margin-right: 2rem;
+      transition: all 0.1s;
+
+      &:hover {
+        color: black;
+      }
+    }
+
+    .dropdown {
+      // margin-right: 60px;
+      cursor: pointer;
+
+      i {
+        margin-left: 0.7rem;
+      }
+
+      .dropdown__menu {
+        display: none;
+      }
+
+      @media (max-width: 800px) {
+        display: none;
+      }
+    }
+
+    .dropdown:hover {
+      .dropdown__menu {
+        display: block;
+        position: absolute;
+        background-color: var(--main-pink);
+        z-index: 100;
+
+        ul {
+          margin: 10px;
+          font-size: 1.8rem;
+          color: white;
+
+          li {
+            width: 200px;
+            padding: 10px;
+
+            a {
+              color: white;
+
+              &:hover {
+                color: black;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  h2 {
+    flex: 1;
+    text-align: center;
+    font-size: 2.8rem;
+
+    @media (max-width: 800px) {
+      font-size: 2rem;
+    }
+  }
+
+  .navbar__gebruiker-info {
+    flex: 1;
+    display: flex;
+    justify-content: right;
+
+    .gebruiker {
+      @media (max-width: 800px) {
+        display: none;
+      }
+    }
+
+    .fas {
+      color: white;
+      font-size: 3.5rem;
+      margin-left: 1.8rem;
+
+      @media (max-width: 800px) {
+        font-size: 4rem;
+      }
+    }
+
+    a {
+      position: relative;
+      color: white;
+
+      .item_nummer {
+        height: 2.2rem;
+        width: 2.2rem;
+        position: absolute;
+        border-radius: 50%;
+        background-color: #5d98ff;
+        font-size: 1.5rem;
+        top: -0.8rem;
+        right: -1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  }
+
+  @media (max-width: 1700px) {
+    padding: 10px 100px;
+  }
+
+  @media (max-width: 1200px) {
+    padding: 10px 60px;
+  }
+
+  @media (max-width: 800px) {
+    padding: 10px 50px;
+  }
+}

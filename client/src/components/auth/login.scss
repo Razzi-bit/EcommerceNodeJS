@@ -1,0 +1,166 @@
+.login {
+  .container {
+    height: 86vh;
+    margin: 0 auto;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+
+    .img__box {
+      flex: 1;
+      background-image: url(../img/login/rechtsImg.png);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 100%;
+    }
+    .login__box {
+      flex: 1;
+      background-color: var(--grey);
+      align-self: stretch;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .login__form {
+        background-color: #fff;
+        border-radius: 1rem;
+        min-height: 55rem;
+        min-width: 45rem;
+        border: var(--line);
+        box-shadow: var(--shadow-dark);
+        // padding: 50px 0;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+
+        .form__text {
+          flex: 0 0 20%;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          h1 {
+            color: var(--main-pink);
+            font-weight: 500;
+            font-size: 3rem;
+            margin-bottom: 10px;
+          }
+          p {
+            color: var(--main-pink);
+            font-weight: 400;
+            font-size: 2rem;
+            margin-bottom: 5px;
+          }
+        }
+        .form {
+          flex: 0 0 70%;
+          margin-top: 1rem;
+          display: flex;
+          flex-direction: column;
+          i {
+            font-size: 2.6rem;
+            color: #ffc2d0bf;
+          }
+
+          label {
+            padding: 1rem;
+            display: flex;
+            align-items: center;
+            border-bottom: 1px solid #aaaaaa;
+          }
+
+          .box {
+            margin: 0 auto;
+            width: 80%;
+            margin-bottom: 2rem;
+            display: flex;
+            justify-content: center;
+          }
+
+          input {
+            padding: 1rem 0 1rem 0;
+            width: 70%;
+            border: none;
+            border-bottom: 1px solid #aaaaaa;
+            font-size: 1.8rem;
+
+            color: #000;
+            &::placeholder {
+              color: var(--main-pink);
+              font-weight: 400;
+              font-size: 1.8rem;
+            }
+            &:focus {
+              outline: none;
+            }
+          }
+
+          .ErroMessage {
+            color: red;
+            display: flex;
+            justify-content: center;
+            margin-bottom: 10px;
+          }
+          .wachtwoordVergeten {
+            color: var(--dark-grey);
+            font-size: 1.4rem;
+            font-weight: 300;
+            margin-right: 7.2rem;
+            margin-bottom: 2rem;
+
+            display: flex;
+            justify-content: right;
+          }
+
+          button {
+            margin: 0 auto;
+            padding: 1.3rem;
+            width: 50%;
+            border: 1px solid var(--main-pink);
+            color: #fff;
+            background-color: var(--dark-pink);
+            border-radius: 0.6rem;
+            font-size: 2.2rem;
+            transition: all 0.2s;
+            cursor: pointer;
+            margin-bottom: 10px;
+
+            &:hover {
+              color: var(--main-pink);
+              background-color: white;
+            }
+          }
+
+          .form__Link {
+            display: flex;
+            justify-content: center;
+            margin-top: 2rem;
+            span,
+            .info__text {
+              font-size: 1.4rem;
+              font-weight: 600;
+            }
+            span {
+              color: #5d98ff;
+            }
+            .info__text {
+              color: rgb(61, 61, 61);
+            }
+          }
+        }
+      }
+    }
+  }
+  @media only screen and (max-width: 500px) {
+    .container .login__box .login__form {
+      width: 30rem;
+    }
+  }
+  @media only screen and (max-width: 1000px) {
+    .img__box {
+      display: none;
+    }
+  }
+}

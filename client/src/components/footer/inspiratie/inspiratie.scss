@@ -1,0 +1,87 @@
+.inspiratie__container {
+  height: 86vh;
+  padding: 50px 400px;
+
+  span {
+    color: var(--main-pink);
+  }
+
+  .text {
+    width: 500px;
+    h5 {
+      font-size: 2.4rem;
+      margin-bottom: 10px;
+      font-weight: 400;
+    }
+    p {
+      font-size: 1.7rem;
+      font-weight: 300;
+    }
+
+    @media (max-width: 1100px) {
+      width: 400px;
+    }
+
+    @media (max-width: 900px) {
+      width: 500px;
+    }
+  }
+
+  .img {
+    @media (max-width: 900px) {
+      display: none;
+    }
+  }
+
+  h3 {
+    font-size: 3rem;
+    text-align: center;
+    font-weight: 400;
+    margin-bottom: 30px;
+  }
+
+  .sectie-1 {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+  }
+
+  .sectie-2 {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+  }
+
+  .img_mobiel {
+    display: none;
+
+    @media (max-width: 900px) {
+      margin-top: 50px;
+      display: flex;
+      width: 100%;
+      justify-content: center;
+    }
+
+    @media (max-width: 450px) {
+      img {
+        width: 300px;
+      }
+    }
+  }
+
+  @media (max-width: 1800px) {
+    padding: 50px 250px;
+  }
+
+  @media (max-width: 1400px) {
+    padding: 50px 100px;
+  }
+
+  @media (max-width: 1250px) {
+    padding: 50px 50px;
+  }
+
+  @media (max-width: 500px) {
+    padding: 50px 10px;
+  }
+}

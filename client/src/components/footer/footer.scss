@@ -1,0 +1,52 @@
+#root {
+  min-height: 100vh;
+}
+footer {
+  color: white;
+  background-color: var(--main-pink);
+  height: 6vh;
+  position: sticky;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  padding: 0 80px;
+  align-items: center;
+
+  .icons {
+    flex: 1;
+    justify-self: left;
+    .fab {
+      color: white;
+      font-size: 3.8rem;
+      margin-right: 2rem;
+      text-align: center;
+    }
+
+    @media (max-width: 800px) {
+      display: flex;
+      justify-content: space-between;
+      font-size: 4rem;
+    }
+  }
+
+  .footer-tekst {
+    justify-content: right;
+    align-items: center;
+    flex: 1;
+    display: flex;
+
+    a {
+      color: white;
+      font-size: 2.1rem;
+      margin-right: 1rem;
+      font-weight: 400;
+    }
+
+    @media (max-width: 800px) {
+      display: none;
+    }
+  }
+
+  @media (max-width: 700px) {
+  }
+}
